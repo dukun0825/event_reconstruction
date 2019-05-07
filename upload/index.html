@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta charset="UTF-8" />
+        <title>upload</title>
+        <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css' async="async" />
+        <script type="text/javascript" src="https://www.dropbox.com/static/api/1/dropbox.js" id="dropboxjs" data-app-key="87zz1w5578ggmk2"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Fredoka+One|Just+Me+Again+Down+Here' rel='stylesheet' type='text/css' />
+        <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/ui-lightness/jquery-ui.css" rel="Stylesheet" />
+        <script src="../other_js/jquery.cookie.js"></script>
+        <script src="https://login.persona.org/include.js"></script>
+        <script src="upload.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/rashomon.css" />
+        <link rel="stylesheet" type="text/css" href="upload.css" />
+    </head>
+    
+    <body>
+        <section id='head'>
+            <div id="signin">登录</div>
+            <header id="mainL">
+                <div id="project">
+                    <div id="proto">    </div>
+                    <div>事件重构:</div>
+                </div>
+                <div class="projectsub">    </div>
+            </header>
+            <header id="mainR">
+                <div class="projectsub">
+                    <a href="http://opinion.berkeley.edu/ddi/"> </a>
+                </div>
+                <header id="sub">
+                    <nav>
+                        <a class="but" href="https://github.com/aleatorybug/rashomon">帮助</a>
+                        <a class="but" href="about.html">关于</a>
+                    </nav>
+                </header>
+            </header>
+        </section>
+        <section id="content">
+            <div id="auth">
+                <p>上传视频之前，请先使用邮箱地址注册</p>
+                <img class="signin" src="https://developer.mozilla.org/files/3961/persona_sign_in_black.png" />
+            </div>
+            <div id="ask">
+                <p>请对此上传的事件进行相关描述</p>
+                <p>描述:
+                    <input type="text" class="ask" name="description" placeholder="A brief description of the event (required)." />
+                </p>
+                <p>位置:
+                    <input type="text" class="ask" name="location" placeholder="Location of the event (required)." />
+                </p>
+                <p>内容:
+                    <input type="text" class="ask" name="email" placeholder="Your email address" />
+                </p>
+                <p>日期:
+                    <input type="text" class="ask" name="date" placeholder="Date of the event (optional)." />
+                </p>
+                <p>Tags (请使用逗号分隔):
+                    <input type="text" class="ask" name="location" placeholder="protest, occupy, example" />
+                </p>
+                <p>是否需要我们匿名化这个媒体(模糊面孔技术)?</p>
+                <p>
+                    <input type="radio" label="yes" name="blur" value="true" checked/>是
+                    <input type="radio" label="no" name="blur" value="false" />否</p>
+                <p>注：填写完上述内容后，将允许上传任何内容的数据。</p>
+            </div>
+            <div id="tabs">
+                <ul>
+                    <li>
+                        <a href="#a">本地上传</a>
+                    </li>
+                    <li>
+                        <a href="#b">Dropbox</a>
+                    </li>
+                    <!-- <li>
+                <a href="#c">Google Drive</a>
+            </li>
+            <li>
+                <a href="#d">Ustream</a>
+            </li> -->
+                </ul>
+                <div id="a">
+                    <p>使用“浏览”按钮选择媒体，或将文件拖到下面的空白处。详细文档请点击
+                        <a href="https://github.com/aleatorybug/rashomon/wiki/Upload-Docs">这里</a>.</p>
+                    <div id="uploadbrowse">
+                        <input type="file" name="multiUpload" id="uploadSelect" multiple />
+                    </div>
+                    <section id="wrapper">
+                        <input id="multi-upload" type="file" />
+                    </section>
+                </div>
+                <div id="b">
+                    <p>Upload media directly from your DropBox by clicking the button below and selecting it via the DropBox Chooser.</p>
+                    <div id="db-chooser">
+                        <a class="but">Dropbox Chooser</a>
+                    </div>
+                </div>
+                <!-- <div id="c">
+            Content of C
+        </div>
+        <div id="d">
+            Content of D
+        </div> --></div>
+        </section>
+    </body>
+
+</html>

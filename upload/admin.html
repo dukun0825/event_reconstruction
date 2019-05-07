@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rashomon Project</title>
+    <link href='http://fonts.googleapis.com/css?family=Wire+One'
+    rel='stylesheet' type='text/css' async="async" />
+
+<link rel="stylesheet" type="text/css" href="../css/rashomon.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Fredoka+One|Just+Me+Again+Down+Here'
+    rel='stylesheet' type='text/css' />
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/ui-lightness/jquery-ui.css" rel="Stylesheet" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+    <script src="../other_js/jquery.cookie.js"></script>
+    <script src="../other_js/moment.min.js"></script>
+    <script src="../other_js/purl.js"></script>
+    <script src="https://login.persona.org/include.js"></script>
+    <script src="../rashomon.auth.js"></script>
+    <script src="admin.js"></script>
+
+<style type="text/css">
+select { font-size: 8pt; }
+.media { position: relative; background: #333; border-radius: 10px;  padding: 2px; color: white; margin-top: 8px; font-size: 8pt; padding-left: 14px; overflow: hidden;}
+.media h1 { padding: 0; margin: 0; color: orange; float: left;}
+.media ul li { display: inline;}
+.check { position: relative; width: 100%; clear: both;}
+.use { float: left;}
+.content { float: left;}
+.delete { cursor: pointer; position: absolute; right: 3px; bottom: 0px; padding: 3px; color: #f33;}
+
+#upload{
+    display: none;
+    margin-left: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+#uploadbrowse{
+    margin-left: 25px;
+
+}
+#uploadSelect{
+    margin-bottom: 10px;
+}
+
+.vid { height: 120px; display: block;}
+
+body{ background: #aaa;}
+#auth { display: none;}
+#auth{ margin-left: 300px; margin-top: 75px;}
+#buttons { position: relative; margin-top: 15px;}
+#build { position: relative; background: #333; border-radius: 10px; color: orange; cursor: pointer; margin-top: 15px; padding: 3px; width: 150px; text-align: center;  }
+#logout { position: relative; background: #333; border-radius: 10px; color: orange; cursor: pointer; margin-top: 15px; padding: 3px; width: 150px; text-align: center;  margin-left: 3px;}
+
+   </style>
+   </head>
+<body>
+    
+    <section id='head'>
+        <div id="signin">Sign in</div>
+
+      <header id="mainL">
+        <div id="project"><div id="proto">Prototype: (Under Construction)</div><div>The Rashomon Project:</div></div>
+        <div class="projectsub">An Online Toolkit for Assembling Multi-Perspective Chronologies</div>
+      </header>
+      <header id="mainR">
+        <div class="projectsub"><a href="http://opinion.berkeley.edu/ddi/">A CITRIS Data &amp; Democracy Project</a>
+        </div>
+        <header id="sub">
+        <nav>
+          <a class="but" href="https://github.com/aleatorybug/rashomon">Source Code</a>
+          <a class="but" href="about.html">About Rashomon</a>
+        </nav>
+      </header>
+
+    </section>
+      
+      </header>
+
+<section id="content">
+<div id="auth">
+  <p>Before uploading, please sign in with any valid email address.</p> <img class="signin" src="https://developer.mozilla.org/files/3961/persona_sign_in_black.png">
+</div>
+<div id="upload">
+  <div id="media"></div>
+  <div id="buttons">
+  <span id="build">Build Chronology</span>
+  <span id="logout">Log out</span>
+</div>
+</div>
+
+</section>
+</body>
+</html>

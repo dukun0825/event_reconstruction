@@ -1,0 +1,250 @@
+.ui-tabs.ui-tabs-vertical {
+  padding: 0;
+  width: 42em;
+  background: #aaa;
+  border: 0;
+}
+
+.ui-tabs.ui-tabs-vertical .ui-widget-header {
+  border: none;
+}
+
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav {
+  float: left;
+  width: 10em;
+  background: transparent;
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid gray;
+}
+
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+  clear: left;
+  width: 100%;
+  margin: 0.2em 0;
+  border: 1px solid #333;
+  border-width: 1px 0 1px 1px;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  position: relative;
+  right: -4px;
+  z-index: 2;
+}
+
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+  display: block;
+  width: 100%;
+  padding: 0.6em 1em;
+  background: #ccc;
+}
+
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+  cursor: pointer;
+}
+
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: 0.2em;
+  padding-bottom: 0;
+  /* selected thing goes here */
+}
+
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+  margin-bottom: 10px;
+}
+
+.ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+  float: left;
+  width: 28em;
+  border-left: 1px solid gray;
+  border-radius: 0;
+  position: relative;
+  left: -1px;
+  background: #aaa;
+  z-index: 15;
+}
+
+#upload {
+  margin-left: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#uploadbrowse {
+  margin-left: 25px;
+}
+
+#uploadbrowse p {
+  font-size: 12pt;
+}
+
+#uploadSelect {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+body {
+  background: #aaa;
+}
+
+#auth {
+  display: none;
+}
+
+#auth {
+  margin-left: 300px;
+  margin-top: 75px;
+}
+
+#tabs { display: none; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#drop-zone, .uploader, 
+#drop-zone.active:after {
+  border-radius: 5px;
+}
+
+#multi-upload { display: none; }
+
+/*-*/
+.uploader {
+  background: #f2f1f1;
+}
+
+::selection {
+  background: rgba(0, 153, 255, 0.5);
+  color: #fff;
+}
+
+#wrapper {
+  margin-left: 25px;
+  padding: 5px 0;
+  width: 400px;
+}
+
+#drop-zone {
+  padding: 20px;
+  position: relative;
+  background: #ccc;
+  min-height: 250px;
+}
+
+#drop-text {
+  margin: 20px auto 0;
+  padding: 60px 0 0;
+  background: #ececec;
+  width: 180px;
+  min-height: 120px;
+  text-align: center;
+  border-radius: 180px;
+  font: bold 30px/35px Helvetica, Arial, sans-serif;
+  color: #666;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+#drop-zone.active:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(68, 164, 253, 0.58);
+}
+
+.uploader {
+  margin: 0 0 15px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.uploader:last-child {
+  margin: 0;
+}
+
+.uploader > div {
+  float: left;
+}
+
+.file-preview {
+  margin: 0 10px 0 0;
+}
+
+.file-preview > img {
+  border: 2px solid #fff;
+  width: 100px;
+  display: block;
+}
+
+.file-name {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.file-name > span {
+  padding: 0 0 0 5px;
+  font-size: 11px;
+  color: #999;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(255,255,255,1);
+}
+
+.state-success {
+  color: #0c0;
+}
+
+.state-error {
+  color: #c00;
+}
+
+.btn-cancel {
+  color: #666;
+  text-decoration: underline;
+  display: block;
+  float: left;
+  clear: left;
+}
+
+.progress-bar {
+  margin: 5px 5px 10px 0;
+  background: #b8ddff;
+  width: 120px;
+  border: 1px solid #44a4fd;
+  border-radius: 5px;
+}
+
+.progress-bar > div {
+  background: #44a4fd;
+  height: 5px;
+}
+
+.progress-bar, .progress-percent {
+  float: left;
+  line-height: 16px;
+}
+
+.progress-percent {
+  font-size: 11px;
+  color: #2a98ff;
+}
+
+#ask { font-size: .8em; border: 1px solid #333; border-radius: 15px; padding: 10px; margin-top: 20px;}
+#ask h4 { margin: 3px;}
+#ask p { margin: 3px;}
+#ask input[type=text] {width: 400px; background: #333; border: none; color: #aaa; font-size: .8em;}
