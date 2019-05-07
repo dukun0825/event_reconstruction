@@ -1,0 +1,76 @@
+ExifTool Version Number         : 8.91
+File Name                       : labVid.3gp
+Directory                       : .
+File Size                       : 13 MB
+File Modification Date/Time     : 2012:05:04 15:31:24-07:00
+File Permissions                : rw-rw-r--
+File Type                       : 3GP
+MIME Type                       : video/3gpp
+Major Brand                     : 3GPP Media (.3GP) Release 4
+Minor Version                   : 0.3.0
+Compatible Brands               : 3gp4, mp41, 3gp6
+Movie Data Size                 : 13285185
+Movie Header Version            : 0
+Create Date                     : 2012:05:02 19:30:54
+Modify Date                     : 2012:05:02 19:30:54
+Time Scale                      : 1000
+Duration                        : 0:00:58
+Preferred Rate                  : 1
+Preferred Volume                : 100.00%
+Matrix Structure                : 1 0 0 0 1 0 0 0 1
+Preview Time                    : 0 s
+Preview Duration                : 0 s
+Poster Time                     : 0 s
+Selection Time                  : 0 s
+Selection Duration              : 0 s
+Current Time                    : 0 s
+Next Track ID                   : 3
+Track Header Version            : 0
+Track Create Date               : 2012:05:02 19:30:54
+Track Modify Date               : 2012:05:02 19:30:54
+Track ID                        : 1
+Track Duration                  : 0:00:58
+Track Layer                     : 0
+Track Volume                    : 0.00%
+Matrix Structure                : 1 0 0 0 1 0 0 0 1
+Image Width                     : 640
+Image Height                    : 480
+Media Header Version            : 0
+Media Create Date               : 2012:05:02 19:30:54
+Media Modify Date               : 2012:05:02 19:30:54
+Media Time Scale                : 1000
+Media Duration                  : 0:00:58
+Handler Type                    : Video Track
+Handler Description             : VideoHandler
+Graphics Mode                   : srcCopy
+Op Color                        : 0 0 0
+Compressor ID                   : mp4v
+Source Image Width              : 640
+Source Image Height             : 480
+X Resolution                    : 72
+Y Resolution                    : 72
+Bit Depth                       : 24
+Video Frame Rate                : 17.494
+Track Header Version            : 0
+Track Create Date               : 2012:05:02 19:30:54
+Track Modify Date               : 2012:05:02 19:30:54
+Track ID                        : 2
+Track Duration                  : 0:00:58
+Track Layer                     : 0
+Track Volume                    : 100.00%
+Matrix Structure                : 1 0 0 0 1 0 0 0 1
+Media Header Version            : 0
+Media Create Date               : 2012:05:02 19:30:54
+Media Modify Date               : 2012:05:02 19:30:54
+Media Time Scale                : 1000
+Media Duration                  : 0:00:58
+Handler Type                    : Audio Track
+Handler Description             : SoundHandler
+Balance                         : 0
+Audio Format                    : samr
+Audio Channels                  : 1
+Audio Bits Per Sample           : 16
+Audio Sample Rate               : 1000
+Avg Bitrate                     : 1.8 Mbps
+Image Size                      : 640x480
+Rotation                        : 0

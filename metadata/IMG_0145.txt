@@ -1,0 +1,117 @@
+ExifTool Version Number         : 8.90
+File Name                       : IMG_0145.MOV
+Directory                       : .
+File Size                       : 135 MB
+File Modification Date/Time     : 2012:05:07 14:50:54-07:00
+File Permissions                : rw-r--r--
+File Type                       : MOV
+MIME Type                       : video/quicktime
+Major Brand                     : Apple QuickTime (.MOV/QT)
+Minor Version                   : 0.0.0
+Compatible Brands               : qt
+Movie Data Size                 : 141443097
+Movie Header Version            : 0
+Create Date                     : 2012:05:07 21:34:19
+Modify Date                     : 2012:05:07 21:34:32
+Time Scale                      : 600
+Duration                        : 0:00:53
+Preferred Rate                  : 1
+Preferred Volume                : 100.00%
+Matrix Structure                : 1 0 0 0 1 0 0 0 1
+Preview Time                    : 0 s
+Preview Duration                : 0 s
+Poster Time                     : 0 s
+Selection Time                  : 0 s
+Selection Duration              : 0 s
+Current Time                    : 0 s
+Next Track ID                   : 3
+Track Header Version            : 0
+Track Create Date               : 2012:05:07 21:34:19
+Track Modify Date               : 2012:05:07 21:34:32
+Track ID                        : 1
+Track Duration                  : 0:00:53
+Track Layer                     : 0
+Track Volume                    : 0.00%
+Matrix Structure                : -1 0 0 0 -1 0 1920 1080 1
+Image Width                     : 1920
+Image Height                    : 1080
+Clean Aperture Dimensions       : 1920x1080
+Production Aperture Dimensions  : 1920x1080
+Encoded Pixels Dimensions       : 1920x1080
+Media Header Version            : 0
+Media Create Date               : 2012:05:07 21:34:19
+Media Modify Date               : 2012:05:07 21:34:32
+Media Time Scale                : 600
+Media Duration                  : 0:00:53
+Media Language Code             : und
+Handler Class                   : Media Handler
+Handler Type                    : Video Track
+Handler Vendor ID               : Apple
+Handler Description             : Core Media Video
+Graphics Mode                   : ditherCopy
+Op Color                        : 32768 32768 32768
+Handler Class                   : Data Handler
+Handler Type                    : Alias Data
+Handler Vendor ID               : Apple
+Handler Description             : Core Media Data Handler
+Compressor ID                   : avc1
+Source Image Width              : 1920
+Source Image Height             : 1080
+X Resolution                    : 72
+Y Resolution                    : 72
+Compressor Name                 : H.264
+Bit Depth                       : 24
+Video Frame Rate                : 29.97
+Handler Type                    : Metadata Tags
+Camera Identifier               : Back
+Frame Readout Time              : 28512 microseconds
+Track Header Version            : 0
+Track Create Date               : 2012:05:07 21:34:19
+Track Modify Date               : 2012:05:07 21:34:32
+Track ID                        : 2
+Track Duration                  : 0:00:53
+Track Layer                     : 0
+Track Volume                    : 100.00%
+Matrix Structure                : 1 0 0 0 1 0 0 0 1
+Media Header Version            : 0
+Media Create Date               : 2012:05:07 21:34:19
+Media Modify Date               : 2012:05:07 21:34:32
+Media Time Scale                : 44100
+Media Duration                  : 0:00:53
+Media Language Code             : und
+Handler Class                   : Media Handler
+Handler Type                    : Audio Track
+Handler Vendor ID               : Apple
+Handler Description             : Core Media Audio
+Balance                         : 0
+Handler Class                   : Data Handler
+Handler Type                    : Alias Data
+Handler Vendor ID               : Apple
+Handler Description             : Core Media Data Handler
+Audio Format                    : mp4a
+Audio Channels                  : 1
+Audio Bits Per Sample           : 16
+Audio Sample Rate               : 44100
+Audio Format                    : chan
+Model                           : iPhone 4S
+Software Version                : 5.1
+Create Date                     : 2012:05:07 14:34:19-07:00
+GPS Coordinates                 : 37.874700 N, 122.258400 W, 123 m Above Sea Level
+Make                            : Apple
+Handler Type                    : Metadata Tags
+Make (und-US)                   : Apple
+Creation Date (und-US)          : 2012:05:07 14:34:19-07:00
+GPS Coordinates (und-US)        : 37.874700 N, 122.258400 W, 123 m Above Sea Level
+Software (und-US)               : 5.1
+Model (und-US)                  : iPhone 4S
+Avg Bitrate                     : 21.2 Mbps
+Base Name                       : IMG_0145
+File Extension                  : MOV
+File Type Description           : Apple QuickTime movie
+GPS Altitude Ref                : Above Sea Level
+GPS Altitude                    : 123 m
+GPS Latitude                    : 37.874700 N
+GPS Longitude                   : 122.258400 W
+Image Size                      : 1920x1080
+Rotation                        : 180
+GPS Position                    : 37.874700 N, 122.258400 W

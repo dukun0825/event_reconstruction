@@ -1,0 +1,23 @@
+[{
+  "SourceFile": "test_photo.jpg",
+  "ExifToolVersion": 8.90,
+  "FileName": "test_photo.jpg",
+  "Directory": ".",
+  "FileSize": "135 kB",
+  "DateTimeOriginal": "2012:07:26 18:13:20",
+  "FileModifyDate": "2012:07:26 18:13:20",
+  "FilePermissions": "rw-r--r--",
+  "FileType": "JPEG",
+  "MIMEType": "image/jpeg",
+  "Comment": "Lavc54.23.100",
+  "ImageWidth": 1920,
+  "ImageHeight": 1080,
+  "EncodingProcess": "Baseline DCT, Huffman coding",
+  "BitsPerSample": 8,
+  "ColorComponents": 3,
+  "YCbCrSubSampling": "YCbCr4:2:0 (2 2)",
+  "BaseName": "test_photo",
+  "FileExtension": "jpg",
+  "FileTypeDescription": "Joint Photographic Experts Group",
+  "ImageSize": "1920x1080"
+}]
