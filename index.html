@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+  
+  <head>
+    <meta charset="UTF-8" />
+    <title>事件重构</title>
+    <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Fredoka+One|Just+Me+Again+Down+Here' rel='stylesheet' type='text/css' />
+    <link type="text/css" href="css/jquery-ui-1.8.23.custom.modified.css" rel="Stylesheet" />  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="other_js/jquery.fullscreen-min.js"></script>
+    <script src="other_js/moment.min.js"></script>
+<script src="popcorn-complete.js"></script>
+<script src="popcorn.rashomonphoto.js"></script>
+    <script src="popcorn.rashomonvideo.js"></script>
+    <script src="other_js/purl.js"></script>
+    <script src="other_js/jquery.tinysort.min.js"></script>
+    <script src="rashomon.js"></script>
+   <style>
+#buttons { margin: 4px; }
+</style> 
+    
+    <link rel="stylesheet" type="text/css" href="css/rashomon.css" />
+<script>
+
+
+$(document).ready(function(){
+
+  $("#unlock").click(function(){
+    Rashomon.makeDraggable();
+    $(".vidtime").hover(function(){ $(this).css("cursor", "-moz-grab pointer")})
+
+  });
+
+  $("#save").click(function(){
+    var tldata = {}
+    tldata.earliest = Rashomon.earliest;
+    tldata.vids = [];
+    tldata.photos = [];
+    $(Rashomon.videos).each(function(){
+      var viddata = {};
+      viddata.name = this.name;
+      viddata.offset = this.offset;
+      viddata.duration = this.pp.duration();
+      tldata.vids.push(viddata);
+    });
+    $(Rashomon.photos).each(function(){
+      var phodata = {};
+      phodata.name = this.name;
+      phodata.offset = this.offset;
+      tldata.photos.push(phodata);
+    });
+    $.ajax({
+          type: 'POST',
+          url: 'upload/admin.php',
+          dataType: 'JSON',
+          data: {
+              "data": tldata,
+              "task": "resync"
+          },
+          success: function (res, status, xhr) {
+              console.log(res);
+          },
+          error: function(xhr, status, err) {
+              alert("Chronology creation failure" + err);
+          }            
+      });
+  });
+
+
+
+});
+
+</script>
+  </head>
+  
+  <body>
+    <section id="fullscreen">
+      <div id="fsvidholder">
+      <div id="xbox">X</div></div>
+    </section>
+    <section id='head'>
+        <div id="signin" class="signin">Sign in</div>
+      <header id="mainL">
+        <div id="project"><div id="proto">  </div><div>事件重构:</div></div>
+        <div class="projectsub">    </div>
+      </header>
+      <header id="mainR">
+        <div class="projectsub"><a href="http://opinion.berkeley.edu/ddi/"></a>
+        </div>
+        <header id="sub">
+        <nav>
+          <a class="but" href="http://10.112.193.234/upload" style="font-size: 18px;">视频上传</a>
+          <a class="but" href="https://github.com/aleatorybug/rashomon" style="font-size: 18px;">帮助</a>
+          <a class="but" href="http://automation.berkeley.edu/rashomon" style="font-size: 18px;">关于</a>
+        </nav>
+      </header>
+    </header>
+    </section>
+      
+
+    <section id="titlebar">
+      <div class="namebox">
+        <div id="title">时间轴</div>
+      </div>
+      <!--<div id="eventTitle">&nbsp;</div>-->
+        
+      
+
+    </section>
+
+
+    <section id="videoswrapper">
+
+      <section id="vidlines" class="mediaSection"> <h1 title="Click to collapse/expand">视频</h1> <div class="lines"></div></section>
+      <section id="pholines" class="mediaSection"> <h1 title="Click to collapse/expand">Photos</h1> <div class="lines"></div></section>
+    </section>
+    
+
+    <section id="tlcontainer">
+     
+    <section id="controls">
+      <div id="controlOuter">
+          <i class="button icon-step-backward" id="rewind"></i>
+          <i class="button icon-play" id="play"></i>
+          <i class="button icon-pause" id="stop"></i>
+          <i class="button icon-step-forward" id="forward"></i>
+          
+      </div>
+    </section>
+     <div class="timeline lines" id="maintimeline">
+        <div id="timepos"></div>
+        <div id="timeDisplay">00:00:00</div>
+
+     </div>
+    </section>
+<section id="playRate">
+  <input id="rateControl" type="range" min="0.1" max="1" value="1" step="0.025" title="Change playback rate"></input><span id="theRate"></span>
+</section>   
+    <section id="videos">
+      <!--<div id="buttons">
+<a class="but" id="unlock">Unlock Positions</a>
+<a class="but" id="save">Save Positioning</a>
+</div>-->
+        <!--<div id="vcontain0" class="container" style="height: 200px ; display: inline-block;">
+            <div class="innervid" style="border: 4px solid red;">
+                <video id="video0" class="rashomon hor" data-offset="4" data-id="0">
+                    <source src="./video_demo/1_small.mp4" type="video/mp4">
+                    <source src="./video_demo/1_small.webm" type="video/webm">
+                </video>
+                <div class="tools" style="background: red; display: none;">
+                    <span class="vidplid">1</span>
+                    <div class="tbuttons">
+                        <i class="fsbutton icon-fullscreen" id="fs0"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vcontain1" class="container" style="height: 200px ; display: inline-block;">
+            <div class="innervid" style="border: 4px solid rgb(232,140,3);">
+                <video id="video1" class="rashomon hor" data-offset="1" data-id="1">
+                    <source src="./video_demo/2_small.mp4" type="video/mp4">
+                    <source src="./video_demo/2_small.webm" type="video/webm">
+                </video>
+                <div class="tools" style="background: rgb(232,140,3); display: none;">
+                    <span class="vidplid">2</span>
+                    <div class="tbuttons">
+                        <i class="fsbutton icon-fullscreen" id="fs1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vcontain2" class="container" style="height: 200px ; display: inline-block;">
+            <div class="innervid" style="border: 4px solid rgb(202, 235, 71);">
+                <video id="video2" class="rashomon hor" data-offset="17" data-id="2">
+                    <source src="./video_demo/3_small.mp4" type="video/mp4">
+                    <source src="./video_demo/3_small.webm" type="video/webm">
+                </video>
+                <div class="tools" style="background: rgb(202, 235, 71); display: none;">
+                    <span class="vidplid">3</span>
+                    <div class="tbuttons">
+                    <i class="fsbutton icon-fullscreen" id="fs2"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="vcontain3" class="container" style="height: 200px ; display: inline-block;">
+            <div class="innervid" style="border: 4px solid rgb(28, 153, 40);">
+                <video id="video3" class="rashomon hor" data-offset="11" data-id="3">
+                    <source src="./video_demo/4_small.mp4" type="video/mp4">
+                    <source src="./video_demo/4_small.webm" type="video/webm">
+                </video>
+                <div class="tools" style="background: rgb(28, 153, 40); display: none;">
+                    <span class="vidplid">4</span>
+                    <div class="tbuttons">
+                        <i class="fsbutton icon-fullscreen" id="fs3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vcontain4" class="container" style="height: 200px ; display: inline-block;">
+            <div class="innervid" style="border: 4px solid rgb(71, 137, 235);">
+                <video id="video4" class="rashomon hor" data-offset="22" data-id="4">
+                    <source src="./video_demo/5_small.mp4" type="video/mp4">
+                    <source src="./video_demo/5_small.webm" type="video/webm">
+                </video>
+                <div class="tools" style="background: rgb(71, 137, 235);">
+                    <span class="vidplid">5</span>
+                    <div class="tbuttons">
+                        <i class="fsbutton icon-fullscreen" id="fs4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vcontain5" class="container" style="height: 200px ; display: inline-block;">
+            <div class="innervid" style="border: 4px solid rgb(102, 0, 255);">
+                <video id="video5" class="rashomon hor" data-offset="28" data-id="5">
+                    <source src="./video_demo/6_small.mp4" type="video/mp4">
+                    <source src="./video_demo/6_small.webm" type="video/webm">
+                </video>
+                <div class="tools" style="background: rgb(102, 0, 255); display: none;">
+                    <span class="vidplid">6</span>
+                    <div class="tbuttons">
+                        <i class="fsbutton icon-fullscreen" id="fs5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+    </section>
+    <section id="meta">
+      <div id="metadata">
+        <div id="metaX">x</div>
+        <h3>Metadata</h3>
+      </div>
+      <div id="map_canvas"></div>
+    </section>
+  </body>
+
+</html>

@@ -1,0 +1,36 @@
+{
+	"mediaPath":".\/video_9_12\/",
+	"event":"UC Davis - Nov 18 2011",
+	"earliest":"Fri Nov 18 2011 15:32:02 GMT-0800 (PST)",
+	"videos":[{
+		"name":"east_00_00_49",
+		"offset":"49",
+		"duration":"62"
+	},
+	{
+		"name":"north_00_01_08",
+		"offset":"68",
+		"duration":"61"
+	},
+	{
+		"name": "sorth_00_00_27",
+		"offset": "27",
+		"duration": "112"
+	},
+	{
+		"name":"west_l_00_00_10-00_01_25",
+		"offset":"10",
+		"duration":"75"
+	},
+	{
+		"name":"west_m_00_00_00-00_01_40",
+		"offset":"1",
+		"duration":"100"
+	},
+	{
+		"name": "west_r_00_00_30-00_02_03",
+		"offset": "30",
+		"duration": "93"
+	}
+	]
+}

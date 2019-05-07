@@ -1,0 +1,50 @@
+{
+	"mediaPath":"http:\/\/rashomonproject.org\/redacted\/",
+	"event":"UC Davis - Nov 18 2011",
+	"earliest":"Fri Nov 18 2011 15:32:02 GMT-0800 (PST)",
+	"videos":[{
+		"name":"64938e9d9080",
+		"offset":"42",
+		"duration":"60.654"
+	},
+	{
+		"name":"6176a8780f84",
+		"offset":"34.5352241537054",
+		"duration":"83.548"
+	},
+	{
+		"name":"621f82d7a48a",
+		"offset":"17.22140896614821",
+		"duration":"93.657"
+	},
+	{
+		"name":"79502ec354ce",
+		"offset":"2.793229643183896",
+		"duration":"101.659"
+	},
+	{
+		"name":"b9aad0d8a5e9",
+		"offset":"44.10338517840805",
+		"duration":"17.65"
+	},
+	{
+		"name":"7cdd7bbc28df",
+		"offset":"28.612076852699",
+		"duration":"55.641"
+	},
+	{
+		"name":"e18676a70b6c",
+		"offset":"16",
+		"duration":"110.646"
+	},
+	{
+		"name":"f63b349ac4d7",
+		"offset":"17.3732845379689",
+		"duration":"60.057"
+	},
+	{
+		"name":"7ed648fc757c",
+		"offset":"33",
+		"duration":"55.64"
+	}]
+}
