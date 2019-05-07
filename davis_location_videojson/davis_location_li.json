@@ -1,0 +1,22 @@
+{
+	"mediaPath": ".\/videodata_li\/",
+	"event": "UC Davis - Nov 18 2011",
+	"earliest": "Fri Nov 18 2011 15:32:02 GMT-0800 (PST)",
+	"videos": [
+		{
+			"name": "x2wy74m",
+			"offset": "10",
+			"duration": "162"
+		},
+		{
+			"name": "x2y8sac",
+			"offset": "5",
+			"duration": "17"
+		},
+		{
+			"name": "x9asa2",
+			"offset": "1",
+			"duration": "54"
+		}
+	]
+}
